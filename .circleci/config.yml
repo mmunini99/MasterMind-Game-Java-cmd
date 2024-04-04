@@ -1,0 +1,37 @@
+version: 2.1
+config: .circleci/config.yml
+
+# Define the order of the jobs of the workflows
+workflows:
+  test-deploy:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+   
+
+# Define the jobs
+jobs:
+# Define the build job
+  build:
+    docker:
+      - image: cimg/openjdk:21.0.2
+    steps:
+      - checkout
+      - run: echo "this is the build job"
+      - run:
+          name: Build with gradle
+          command: gradle build
+  # Define the test job
+  test:
+    docker:
+      - image: cimg/openjdk:21.0.2
+    steps:
+      - checkout
+      - run: echo "this is the test job"
+      - run:
+          name: Run gradle tests
+          command: gradle test --tests TestSuite
+      - store_test_results:
+          path: build/test-results
