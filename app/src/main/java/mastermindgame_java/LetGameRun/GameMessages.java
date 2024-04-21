@@ -2,12 +2,22 @@ package mastermindgame_java.LetGameRun;
 
 import static mastermindgame_java.Settings.SetDifficulty.Level;
 
+import mastermindgame_java.Settings.PrintString;
+
 public class GameMessages {
 
     // TODO: public or static for the methods?
     // TODO: add something for the EXIT keyword?
 
+    boolean printToFile;
 
+    PrintString printString;
+
+    public GameMessages(boolean printToFile) {
+        this.printToFile = printToFile;
+
+        printString = new PrintString(printToFile);
+    }
 
     public static String firstWelcomeMessage(String level) {
         return String.format("\nYou will play with the %s level. Have a nice game!\n", level);
@@ -66,8 +76,10 @@ public class GameMessages {
         return "These are your previous guesses: \n";
     }
 
-    public static String columnsNameTemplateGuesses() {
-        return "Trial   Pos1    Pos2   Pos3    Pos4    OK      N-OK    NO\n";
+    public void columnsNameTemplateGuesses() {
+        String output = "Trial\tPos1\tPos2\tPos3\tPos4\tOK\tN-OK\tNO\n";
+        printString.redirectOutput(output);
+
     }
 
     public static String invalidLevel() {

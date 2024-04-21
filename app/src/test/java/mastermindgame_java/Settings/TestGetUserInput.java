@@ -12,6 +12,9 @@ import java.io.ByteArrayInputStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestGetUserInput {
+
+
+
     @ParameterizedTest
     @MethodSource("provideTestData_testGetUserInput")
     public void testGetUserInput(String input, String expectedOutput) {
