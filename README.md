@@ -62,13 +62,11 @@ Now, you can run the tests and play:
 ```bash
 .\gradlew run
 ```
-
 * in Linux or MacOS:
 
-  ```bash
+```bash
 gradlew run
 ```
-   
 
 
 ## Rules of the table game
