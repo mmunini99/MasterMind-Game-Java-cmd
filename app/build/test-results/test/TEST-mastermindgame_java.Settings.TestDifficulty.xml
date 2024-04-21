@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="mastermindgame_java.Settings.TestDifficulty" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-04-21T22:38:46" hostname="DESKTOP-R0UEMP9" time="0.038">
   <properties/>
   <testcase name="[1] EASY, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.003"/>
@@ -17,5 +18,34 @@
   <testcase name="[2] 123, Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <testcase name="[3] hjscb, Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
+=======
+<testsuite name="mastermindgame_java.Settings.TestDifficulty" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-04-21T15:23:47" hostname="Lisas-MacBook-Pro.local" time="0.063">
+  <properties/>
+  <testcase name="[1] EASY, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.007"/>
+  <testcase name="[2] MEDIUM, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] HARD, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[1] EASY, 15" classname="mastermindgame_java.Settings.TestDifficulty" time="0.003"/>
+  <testcase name="[2] MEDIUM, 12" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] HARD, 7" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[1] Easy, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.009"/>
+  <testcase name="[2] Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
+  <testcase name="[1] EASY, 2" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[2] MEDIUM, 5" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] HARD, 5" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
+  <testcase name="[1] jhscbhjs, Easy, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.008"/>
+  <testcase name="[2] 123, Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
+  <testcase name="[3] hjscb, Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <system-out><![CDATA[Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
+]]></system-out>
+>>>>>>> 95226b5170559f06521aaf0db6baccddb2cdcfe2
   <system-err><![CDATA[]]></system-err>
 </testsuite>

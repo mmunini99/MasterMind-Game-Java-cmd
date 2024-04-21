@@ -63,9 +63,9 @@ public class TemplateMatrix {
             gameMessages.columnsNameTemplateGuesses(); // TODO sure?
 
             String output = "";
-            for (int i = 0; i < count; i++) {
-                output += "\n";
-            }
+            // for (int i = 0; i < count; i++) {
+            //     output += "\n";
+            // }
 
             for (int i = 0; i < count; i++) { // TODO sure?
                 output = getTemplateOutput(output, template, i);

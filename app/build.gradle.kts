@@ -45,3 +45,13 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+application {
+    // Define the main class for the application.
+    mainClass.set("mastermindgame_java.LetGameRun.Play")
+}
+
+tasks.named<JavaExec>("run") {
+    // Provide input from the command line
+    standardInput = System.`in`
+}
