@@ -32,15 +32,15 @@ java  mastermindgame_java/LetGameRun/Play
 
  * Locate yourself into "~/MasterMind-Game-Java-cmd"
 
- ** Then, if you have a Windows OS, work with:
+Then, if you have a Windows OS, work with:
 
 ```bash
 .\gradlew build
 ```
-** instead if you have Linux or MacOS:
+instead if you have Linux or MacOS:
 
 ```bash
-da inserire ---
+gradle build
 ```
 Now, you can run the tests and play:
 
@@ -53,7 +53,7 @@ Now, you can run the tests and play:
 * in Linux or MacOS:
 
   ```bash
-da inserire ---
+gradlew run
 ```
    
 
