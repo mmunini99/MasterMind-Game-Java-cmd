@@ -11,16 +11,29 @@ To play Mastermind on your device a Java distribution is required. To run the fi
 * Locate yourself into `~/MasterMind-Game-Java-cmd\app\src\main\java/`
 
 * Compile the classes using:
-  
+
+If you have a Windows OS, work with: 
 ```bash
 javac mastermindgame_java\LetGameRun\Play.java mastermindgame_java\Settings\*.java
 ```
 
+Insetad if you have Linux or MacOS: 
+```bash
+
+```
+
 * Then run it:
 
+If you have a Windows OS, work with: 
 ```bash
 java  mastermindgame_java/LetGameRun/Play
 ```
+
+Insetad if you have Linux or MacOS: 
+```bash
+
+```
+
 * Play and Enjoy!!!
 
 
