@@ -32,6 +32,6 @@ jobs:
       - run: echo "this is the test job"
       - run:
           name: Run gradle tests
-          command: gradle test --tests TestSuite
+          command: gradle test
       - store_test_results:
           path: build/test-results
