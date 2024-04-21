@@ -6,8 +6,27 @@
  */
 
 plugins {
+     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
+    alias(libs.plugins.jvm)
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+}
+
+dependencies {
+    // Use the Kotlin JUnit 5 integration.
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+
+    // Use the JUnit 5 integration.
+    testImplementation(libs.junit.jupiter.engine)
+
+    // Use the JUnit 5 integration.
+    testImplementation("org.junit.jupiter:junit-jupiter-api:latest.release")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:latest.release")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // This dependency is used by the application.
+    implementation(libs.guava)
 }
 
 repositories {
@@ -20,4 +39,9 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
+}
+
+tasks.named<Test>("test") {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
 }
