@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mastermindgame_java.Settings.TestCheckGuessValidity" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-04-21T22:38:46" hostname="DESKTOP-R0UEMP9" time="0.027">
+  <properties/>
+  <testcase name="[1] EASY, 4222&#10;0122, [0, 1, 2, 2]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.01"/>
+  <testcase name="[2] MEDIUM, 3455, [3, 4, 5, 5]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <testcase name="[3] HARD, 5123, [5, 1, 2, 3]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <testcase name="[1] EASY, 0121, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.004"/>
+  <testcase name="[2] MEDIUM, 0135, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <testcase name="[3] MEDIUM, 0t39, false" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <testcase name="[4] HARD, 5412, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -9,17 +9,17 @@ public class TemplateMatrix {
     private final int lengthofguess;
     private final int lengthoffeedback = 3;
 
-    private int[][] template;
+    public int[][] template;
 
     PrintString printString;
     GameMessages gameMessages;
 
-    public TemplateMatrix(int lengthoftrials, int lengthofguess, boolean printToFile) {
+    public TemplateMatrix(int lengthOfTrials, int lengthOfGuess, boolean printToFile) {
 
-        this.lengthofguess = lengthofguess;
+        this.lengthofguess = lengthOfGuess;
 
-        int ncolumn = lengthofguess + lengthoffeedback + 1;
-        int nrow = lengthoftrials;
+        int ncolumn = lengthOfGuess + lengthoffeedback + 1;
+        int nrow = lengthOfTrials;
         this.template = new int[nrow][ncolumn];
 
         printString = new PrintString(printToFile);
@@ -27,7 +27,7 @@ public class TemplateMatrix {
 
     }
 
-    public void setguess(int[] guess, int[] feedback, int count) {
+    public void setGuess(int[] guess, int[] feedback, int count) {
 
         int ncolumn = lengthofguess + lengthoffeedback + 1;
 
@@ -42,14 +42,10 @@ public class TemplateMatrix {
             this.template[count][i] = feedback[i - 5];
         }
 
-
-
-
-
     }
 
 
-    public void printtemplate(int count) {
+    public void printTemplate(int count) {
 
         if (count == 0) {
             gameMessages.columnsNameTemplateGuesses();
@@ -64,14 +60,14 @@ public class TemplateMatrix {
 
         } else if (count >= 1) {
 
-            gameMessages.columnsNameTemplateGuesses();
+            gameMessages.columnsNameTemplateGuesses(); // TODO sure?
 
             String output = "";
             for (int i = 0; i < count; i++) {
                 output += "\n";
             }
 
-            for (int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++) { // TODO sure?
                 output = getTemplateOutput(output, template, i);
 
                 output += "\n";
@@ -89,8 +85,5 @@ public class TemplateMatrix {
         }
         return output;
     }
-
-
-
 
 }
