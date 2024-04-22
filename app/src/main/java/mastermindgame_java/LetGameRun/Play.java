@@ -31,9 +31,7 @@ public class Play {
 
     // Variable used only in graphic version
     public int[] secretCode;
-    public int[] feedback = new int[3]; // ---> create a constant
-    private int count;
-    private boolean initialized = false;
+    public int[] feedback = new int[3];
 
     public Play(Scanner scanner, boolean printToFile) {
         this.scanner = scanner;
@@ -52,8 +50,6 @@ public class Play {
         this.scannerGuess = new CheckGuessValidity(scanner, difficultyLvl);
         this.resultSummary = new TemplateMatrix(trials, lengthOfSequence, printToFile);
         this.score = new CalculatePoints(difficultyLvl);
-
-        initialized = true;
 
     }
 
@@ -114,33 +110,8 @@ public class Play {
         return code;
     }
 
-    public void computeFeedback(int[] guess) {
-        ProvideFeedback provider = new ProvideFeedback(secretCode);
-        this.feedback = provider.getFeedback(guess);
-    }
-
-    public boolean getInitialized() {
-        return initialized;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void AugCount() {
-        count++;
-    }
-
-    public void setSecretCode(int[] secretCode) {
-        this.secretCode = secretCode;
-    }
-
     public boolean areTrialsLeft(int count) {
         return count < trials && count != trials - 1;
-    }
-
-    public int[] getSecretCode() {
-        return secretCode;
     }
 
     public boolean wasSecretCodeGuessed(int[] feedback) {
