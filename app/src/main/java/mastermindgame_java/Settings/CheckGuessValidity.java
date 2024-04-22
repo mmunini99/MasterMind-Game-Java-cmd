@@ -6,7 +6,7 @@ import static mastermindgame_java.Settings.SetDifficulty.Level;
 
 public class CheckGuessValidity {
 
-    private int MIN_VALUE;
+    private final int MIN_VALUE = 0;
     private int MAX_VALUE;
     private int DIGIT_COUNT;
 
@@ -16,7 +16,6 @@ public class CheckGuessValidity {
 
         SetDifficulty setDifficulty = new SetDifficulty(difficulty_lvl);
 
-        this.MIN_VALUE = 0;
         this.MAX_VALUE = setDifficulty.getMaxValueForColor();
 
         this.DIGIT_COUNT = setDifficulty.getLengthOfSequence();

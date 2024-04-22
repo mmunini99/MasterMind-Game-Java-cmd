@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.Settings.TestCalculatePoints" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-04-22T14:36:40" hostname="DESKTOP-R0UEMP9" time="0.073">
+<testsuite name="mastermindgame_java.Settings.TestCalculatePoints" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-04-22T15:57:26" hostname="DESKTOP-R0UEMP9" time="0.019">
   <properties/>
-  <testcase name="[1] EASY, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.042"/>
-  <testcase name="[2] EASY, 1, 15" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
+  <testcase name="[1] EASY, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.002"/>
+  <testcase name="[2] EASY, 1, 15" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
   <testcase name="[3] EASY, 3, 25" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[4] EASY, 10, 60" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[5] EASY, 11, 65" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[6] EASY, 14, 80" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[7] MEDIUM, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[8] MEDIUM, 1, 30" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
-  <testcase name="[9] MEDIUM, 2, 50" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
-  <testcase name="[10] MEDIUM, 8, 170" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[11] MEDIUM, 11, 230" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[12] HARD, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
-  <testcase name="[13] HARD, 1, 130" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
-  <testcase name="[14] HARD, 2, 250" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[4] EASY, 10, 60" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[5] EASY, 11, 65" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[6] EASY, 14, 80" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[7] MEDIUM, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[8] MEDIUM, 1, 30" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
+  <testcase name="[9] MEDIUM, 2, 50" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
+  <testcase name="[10] MEDIUM, 8, 170" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[11] MEDIUM, 11, 230" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[12] HARD, 0, 10" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
+  <testcase name="[13] HARD, 1, 130" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.0"/>
+  <testcase name="[14] HARD, 2, 250" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
   <testcase name="[15] HARD, 6, 730" classname="mastermindgame_java.Settings.TestCalculatePoints" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
