@@ -2,9 +2,7 @@ package mastermindgame_java.Settings;
 
 import mastermindgame_java.LetGameRun.GameMessages;
 
-
 public class TemplateMatrix {
-
 
     private final int lengthofguess;
     private final int lengthoffeedback = 3;
@@ -31,7 +29,6 @@ public class TemplateMatrix {
 
         int ncolumn = lengthofguess + lengthoffeedback + 1;
 
-
         this.template[count][0] = count + 1;
 
         for (int i = 1; i < 5; i++) {
@@ -43,7 +40,6 @@ public class TemplateMatrix {
         }
 
     }
-
 
     public void printTemplate(int count) {
 
@@ -60,14 +56,11 @@ public class TemplateMatrix {
 
         } else if (count >= 1) {
 
-            gameMessages.columnsNameTemplateGuesses(); // TODO sure?
+            gameMessages.columnsNameTemplateGuesses();
 
             String output = "";
-            // for (int i = 0; i < count; i++) {
-            //     output += "\n";
-            // }
 
-            for (int i = 0; i < count; i++) { // TODO sure?
+            for (int i = 0; i < count; i++) {
                 output = getTemplateOutput(output, template, i);
 
                 output += "\n";
@@ -75,7 +68,7 @@ public class TemplateMatrix {
 
             printString.redirectOutput(output);
 
-       }
+        }
     }
 
     private String getTemplateOutput(String output, int[][] template, int round) {

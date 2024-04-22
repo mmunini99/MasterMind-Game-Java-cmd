@@ -4,6 +4,7 @@ import static mastermindgame_java.LetGameRun.GameMessages.invalidLevel;
 
 import java.util.HashMap;
 import java.util.Map;
+
 public class SetDifficulty {
 
     public static enum Level {
@@ -17,13 +18,12 @@ public class SetDifficulty {
 
     private static final Map<Level, DifficultyParameters> difficultyMap = new HashMap<>();
 
-    public SetDifficulty(Level level){
+    public SetDifficulty(Level level) {
         this.level = level;
         setParameters();
     }
 
     static {
-        // Define difficulty parameters
         difficultyMap.put(Level.EASY, new DifficultyParameters(4, 15, 2));
         difficultyMap.put(Level.MEDIUM, new DifficultyParameters(4, 12, 5));
         difficultyMap.put(Level.HARD, new DifficultyParameters(4, 7, 5));
@@ -39,7 +39,6 @@ public class SetDifficulty {
         this.maxValueForColor = parameters.maxValueForColor;
     }
 
-    // Helper class to store difficulty parameters
     private static class DifficultyParameters {
         private int lengthOfSequence;
         private int numberOfTrials;
@@ -52,7 +51,6 @@ public class SetDifficulty {
         }
     }
 
-    // Getter methods for accessing parameters
     public int getLengthOfSequence() {
         return lengthOfSequence;
     }
@@ -64,6 +62,5 @@ public class SetDifficulty {
     public int getMaxValueForColor() {
         return maxValueForColor;
     }
-
 
 }

@@ -10,7 +10,6 @@ public class ScannerDifficulty {
     private GetUserInput getUserInput;
     private String input;
 
-    // Constructor
     public ScannerDifficulty(Scanner scanner) {
         this.level = null;
         this.input = null;
@@ -18,9 +17,7 @@ public class ScannerDifficulty {
         getUserInput = new GetUserInput(scanner);
     }
 
-    // Check that the input is valid
     public void checkDifficulty(String input) {
-        // If the user types a valid difficulty, set the level
 
         try {
             this.level = Level.valueOf(input);
@@ -32,7 +29,6 @@ public class ScannerDifficulty {
 
     }
 
-    // Prompt the user for input
     public ScannerDifficulty getDifficulty(Scanner scanner) {
         System.out.println(chooseDifficultyMessage());
         this.input = getUserInput.getUserInput().toUpperCase();

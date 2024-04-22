@@ -26,27 +26,27 @@ public class CheckGuessValidity {
     public int[] validateGuess() {
         int[] guess = new int[DIGIT_COUNT];
         boolean validInput = false;
-    
+
         char minChar = Character.forDigit(MIN_VALUE, 10);
         char maxChar = Character.forDigit(MAX_VALUE, 10);
-    
+
         while (!validInput) {
             String input = getUserInput.getUserInput();
-    
+
             if (!isCorrectLength(input)) {
                 System.out.println(invalidInputSequence(DIGIT_COUNT, MAX_VALUE)); // TODO va bene?
                 continue;
             }
-    
+
             boolean validFormat = isCorrectValueInterval(guess, minChar, maxChar, input);
-    
+
             if (!validFormat) {
                 System.out.println(invalidInputSequence(DIGIT_COUNT, MAX_VALUE));
             } else {
                 validInput = true;
             }
         }
-    
+
         return guess;
     }
 

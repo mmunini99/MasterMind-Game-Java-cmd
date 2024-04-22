@@ -16,7 +16,7 @@ public class GetUserInput {
         // If the user types "EXIT", exit the game
         if ("EXIT".equalsIgnoreCase(input.toUpperCase())) {
             System.out.println(exitGameMessage());
-            System.exit(0); // Exit the program
+            System.exit(0);
         }
     }
 
@@ -25,5 +25,5 @@ public class GetUserInput {
         checkExit(input);
         return input;
     }
-    
+
 }
