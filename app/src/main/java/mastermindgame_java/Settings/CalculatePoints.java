@@ -17,7 +17,7 @@ public class CalculatePoints {
         difficultyMap.put(Level.HARD, 2);
     }
     
-    public int calculate_final_score(Level difficulty_level, int trialsLeft) {
+    public int calculateFinalScore(Level difficulty_level, int trialsLeft) {
         int score = 0;
         int difficulty = difficultyMap.getOrDefault(difficulty_level, -1);
         

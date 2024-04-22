@@ -22,44 +22,51 @@ public class Play {
     private int trials;
     private int maxValue;
     //Variable used only in graphic version
-    private int[] secretCode;
-    public int[] feedback;
+    public int[] secretCode;
+    public int[] feedback = new int[3]; //---> create a constant
     private int count;
     private boolean initialized = false;
 
+    private CheckGuessValidity scannerGuess;
+    private TemplateMatrix resultSummary;
+
     private boolean printToFile;
+    public boolean playerWon;
 
     public Play(Scanner scanner, boolean printToFile) {
         this.scanner = scanner;
         this.printToFile = printToFile;
         scannerDifficulty = new ScannerDifficulty(scanner);
     }
-    //
-    public void LetGameRun() {
-        // Initialize the feedback array
-        this.feedback = new int[3]; //---> create a constant
+    
+    public void askForDifficulty(){
         scannerDifficulty.getDifficulty(scanner);
         this.difficultyLvl = scannerDifficulty.getDifficultyLevel();
         this.setDifficulty = new SetDifficulty(difficultyLvl);
         this.trials = setDifficulty.getNumberOfTrials();
         this.lengthOfSequence = setDifficulty.getLengthOfSequence();
+        this.maxValue = setDifficulty.getMaxValueForColor();
 
+        this.scannerGuess = new CheckGuessValidity(scanner, difficultyLvl);
+        this.resultSummary = new TemplateMatrix(trials, lengthOfSequence, printToFile);
 
+        initialized = true;
 
-        TemplateMatrix resultSummary = new TemplateMatrix(trials, lengthOfSequence, printToFile);
+    }
+    public boolean LetGameRun(int[] secretCode) {
+        // Initialize the feedback array
+        this.feedback = new int[3]; //---> create a constant
 
 
         // Display the second welcome message
         System.out.println(firstWelcomeMessage(difficultyLvl.toString()));
-        // this.templateAnswer = new TemplateMatrix(trials, lengthOfSequence);
+
         // Display the number of trials that the player has to guess the secret code
         System.out.println(declareNumberOfTrials(trials));
         // Initialize the counter for the trials
         int count = 0;
         // Initialize the final score
         int final_score = 0;
-        int[] secretCode = generateSecretCode();
-        CheckGuessValidity scannerGuess = new CheckGuessValidity(scanner, difficultyLvl);
         ProvideFeedback provideFeedback = new ProvideFeedback(secretCode);
         // Loop over the trials
         while (count < trials) {
@@ -76,7 +83,7 @@ public class Play {
             provideFeedback.displayFeedback();
             // Check if the player has guessed the secret code
             if (wasSecretCodeGuessed(feedback)) {
-                System.out.println(secretCodeWasGuessed());
+                this.playerWon = true;
                 break;
             }
             // Check if the player has trials left
@@ -84,6 +91,7 @@ public class Play {
                 count++;
                 System.out.println(displayRemainingTrials(trials - count));
             } else {
+                this.playerWon = false;
                 System.out.println(lostMessage(Arrays.toString(secretCode)));
                 break;
             }
@@ -91,14 +99,15 @@ public class Play {
         }
         // Calculate the final score
         CalculatePoints score = new CalculatePoints();
-        final_score = score.calculate_final_score(difficultyLvl, trials - count);
+        final_score = score.calculateFinalScore(difficultyLvl, trials - count);
         // Display the final score
         System.out.println(provideFinalScore(final_score));
+
+        return playerWon;
     }
     //Standalone methods: used mostly in the graphic implementation.
     // Generates a random 4-digit secret code
     public int[] generateSecretCode() {
-        maxValue = setDifficulty.getMaxValueForColor();
 
         // Initialise a new array of integers
         int[] code = new int[lengthOfSequence];
@@ -109,16 +118,7 @@ public class Play {
         }
         return code;
     }
-    public void initializePlay(String diff){
-        // Initialize the feedback array
-        this.feedback = new int[3]; //---> create a constant
-        this.difficultyLvl = Level.valueOf(diff.toUpperCase()); //
-        this.setDifficulty = new SetDifficulty(difficultyLvl);
-        this.trials = setDifficulty.getNumberOfTrials();
-        this.lengthOfSequence = setDifficulty.getLengthOfSequence();
-        secretCode = generateSecretCode();
-        initialized = true;
-    }
+
     public void computeFeedback(int[] guess){
         ProvideFeedback provider = new ProvideFeedback(secretCode);
         this.feedback = provider.getFeedback(guess);
@@ -147,9 +147,21 @@ public class Play {
     }
     public static void main(String[] args) {
         final boolean printToFile = false;
+
         Scanner scanner = new Scanner(System.in);
         Play play = new Play(scanner, printToFile);
-        play.LetGameRun();
+
+        play.askForDifficulty();
+
+        int[] secretCode = play.generateSecretCode();
+        
+        boolean playerWon = play.LetGameRun(secretCode);
+
+        if (playerWon) {
+            System.out.println(secretCodeWasGuessed());
+        } else {
+            System.out.println(lostMessage(Arrays.toString(play.secretCode)));
+        }
         scanner.close();
     }
 }

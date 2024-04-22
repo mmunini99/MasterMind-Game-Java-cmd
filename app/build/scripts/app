@@ -210,7 +210,7 @@ DEFAULT_JVM_OPTS=""
 
 set -- \
         -classpath "$CLASSPATH" \
-         \
+        mastermindgame_java.LetGameRun.Play \
         "$@"
 
 # Stop when "xargs" is not available.

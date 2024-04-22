@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T12:45:44" hostname="Lisas-MacBook-Pro.local" time="0.085">
+  <properties/>
+  <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.05"/>
+  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.014"/>
+  <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.014"/>
+  <system-out><![CDATA[Current working directory: /Users/lisadavinchie/Documents/University/SoftwareDevelopmentMethods/MasterMind-Game-Java-cmd/app
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+
+You will play with the EASY level. Have a nice game!
+
+You have 15 trials to guess the sequence.
+
+Enter your 4-digit guess: 
+Feedback: 4 correct position, 0 correct digit, 0 wrong guesses
+
+Final score: 85
+
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+
+You will play with the MEDIUM level. Have a nice game!
+
+You have 12 trials to guess the sequence.
+
+Enter your 4-digit guess: 
+Invalid input. Please enter a 4-digit number using digits from 0 to 5.
+
+Feedback: 1 correct position, 2 correct digit, 1 wrong guesses
+
+You have 11 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	5	2	0	4	1	2	1	
+
+Enter your 4-digit guess: 
+Feedback: 4 correct position, 0 correct digit, 0 wrong guesses
+
+Final score: 230
+
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+
+You will play with the HARD level. Have a nice game!
+
+You have 7 trials to guess the sequence.
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 6 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 5 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+2	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 4 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+2	3	3	0	5	0	1	3	
+3	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 3 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+2	3	3	0	5	0	1	3	
+3	3	3	0	5	0	1	3	
+4	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 2 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+2	3	3	0	5	0	1	3	
+3	3	3	0	5	0	1	3	
+4	3	3	0	5	0	1	3	
+5	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+You have 1 guesses left. Good luck!
+
+Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
+
+1	3	3	0	5	0	1	3	
+2	3	3	0	5	0	1	3	
+3	3	3	0	5	0	1	3	
+4	3	3	0	5	0	1	3	
+5	3	3	0	5	0	1	3	
+6	3	3	0	5	0	1	3	
+
+Enter your 4-digit guess: 
+Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
+
+Sorry you lost!
+The correct combination was: [1, 0, 1, 0]
+
+Final score: 130
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

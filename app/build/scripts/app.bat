@@ -72,7 +72,7 @@ set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\kotlin-stdlib-1.9.20.jar;%AP
 
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%"  %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" mastermindgame_java.LetGameRun.Play %*
 
 :end
 @rem End local scope for the variables with windows NT shell
