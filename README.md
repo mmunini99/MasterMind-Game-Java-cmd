@@ -26,7 +26,7 @@ javac mastermindgame_java/LetGameRun/Play.java mastermindgame_java/Settings/*.ja
 
 If you have a Windows OS, work with: 
 ```bash
-java  mastermindgame_java/LetGameRun/Play
+java mastermindgame_java/LetGameRun/Play
 ```
 
 Insetad if you have Linux or MacOS: 
