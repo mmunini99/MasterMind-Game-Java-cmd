@@ -19,7 +19,7 @@ javac mastermindgame_java\LetGameRun\Play.java mastermindgame_java\Settings\*.ja
 
 Insetad if you have Linux or MacOS: 
 ```bash
-
+javac mastermindgame_java/LetGameRun/Play.java mastermindgame_java/Settings/*.java
 ```
 
 * Then run it:
@@ -31,7 +31,7 @@ java  mastermindgame_java/LetGameRun/Play
 
 Insetad if you have Linux or MacOS: 
 ```bash
-
+java mastermindgame_java/LetGameRun/Play mastermindgame_java/Settings/*
 ```
 
 * Play and Enjoy!!!
@@ -65,7 +65,7 @@ Now, you can run the tests and play:
 * in Linux or MacOS:
 
 ```bash
-gradlew run
+gradle run
 ```
 
 
