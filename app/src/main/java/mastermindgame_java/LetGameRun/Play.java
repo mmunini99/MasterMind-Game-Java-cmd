@@ -29,6 +29,7 @@ public class Play {
 
     private CheckGuessValidity scannerGuess;
     private TemplateMatrix resultSummary;
+    private CalculatePoints score;
 
     private boolean printToFile;
     public boolean playerWon;
@@ -49,6 +50,7 @@ public class Play {
 
         this.scannerGuess = new CheckGuessValidity(scanner, difficultyLvl);
         this.resultSummary = new TemplateMatrix(trials, lengthOfSequence, printToFile);
+        this.score = new CalculatePoints(difficultyLvl);
 
         initialized = true;
 
@@ -96,9 +98,9 @@ public class Play {
             }
 
         }
+        System.out.println("Remaining trials: " + (trials - count) + "\n");
         // Calculate the final score
-        CalculatePoints score = new CalculatePoints();
-        final_score = score.calculateFinalScore(difficultyLvl, trials - count);
+        final_score = score.calculateFinalScore(trials - count - 1);
         // Display the final score
         System.out.println(provideFinalScore(final_score));
 
@@ -159,7 +161,7 @@ public class Play {
         if (playerWon) {
             System.out.println(secretCodeWasGuessed());
         } else {
-            System.out.println(lostMessage(Arrays.toString(play.secretCode)));
+            System.out.println(lostMessage(Arrays.toString(secretCode)));
         }
         scanner.close();
     }
