@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T14:36:40" hostname="DESKTOP-R0UEMP9" time="0.031">
+<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T16:03:33" hostname="DESKTOP-R0UEMP9" time="0.067">
   <properties/>
-  <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.015"/>
-  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.008"/>
-  <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.005"/>
+  <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.046"/>
+  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.009"/>
+  <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.006"/>
   <system-out><![CDATA[Current working directory: C:\Users\Gaia\Desktop\MasterMind-Game-Java-cmd\app
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
 
@@ -115,9 +115,6 @@ Trial	Pos1	Pos2	Pos3	Pos4	OK	N-OK	NO
 
 Enter your 4-digit guess: 
 Feedback: 0 correct position, 1 correct digit, 3 wrong guesses
-
-Sorry you lost!
-The correct combination was: [1, 0, 1, 0]
 
 Final score: 130
 
