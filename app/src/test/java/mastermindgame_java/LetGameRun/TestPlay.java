@@ -34,7 +34,6 @@ public class TestPlay {
         String currentDirectory = System.getProperty("user.dir");
         System.out.println("Current working directory: " + currentDirectory);
         String[] fileNames = {"TestInputs1.txt", "TestInputs2.txt", "TestInputs3.txt"};
-        int[][] secretCodes = {{0, 1, 0, 0}, {2, 0, 4, 4}, {1, 0, 1, 0}};
 
         String[] input = new String[3];
 
@@ -42,9 +41,9 @@ public class TestPlay {
             input[i] = getInputFromTxt(basePath + fileNames[i]);
         }
         return Stream.of(
-            Arguments.of(secretCodes[0], true, input[0]),
-            Arguments.of(secretCodes[1], true, input[1]),
-            Arguments.of(secretCodes[2], false, input[2])
+            Arguments.of(new int[] {0, 1, 0, 0}, true, input[0]),
+            Arguments.of(new int[] {2, 0, 4, 4} , true, input[1]),
+            Arguments.of(new int[] {1, 0, 1, 0}, false, input[2])
             );
     }
 

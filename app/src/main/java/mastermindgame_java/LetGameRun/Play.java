@@ -92,7 +92,6 @@ public class Play {
                 System.out.println(displayRemainingTrials(trials - count));
             } else {
                 this.playerWon = false;
-                System.out.println(lostMessage(Arrays.toString(secretCode)));
                 break;
             }
 
@@ -105,7 +104,7 @@ public class Play {
 
         return playerWon;
     }
-    //Standalone methods: used mostly in the graphic implementation.
+
     // Generates a random 4-digit secret code
     public int[] generateSecretCode() {
 
