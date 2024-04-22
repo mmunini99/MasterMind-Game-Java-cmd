@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.Settings.TestDifficulty" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-04-22T15:57:26" hostname="DESKTOP-R0UEMP9" time="0.032">
+<testsuite name="mastermindgame_java.Settings.TestDifficulty" tests="24" skipped="0" failures="0" errors="0" timestamp="2024-04-22T16:03:34" hostname="DESKTOP-R0UEMP9" time="0.047">
   <properties/>
-  <testcase name="[1] EASY, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
-  <testcase name="[2] MEDIUM, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
-  <testcase name="[3] HARD, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
+  <testcase name="[1] EASY, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.003"/>
+  <testcase name="[2] MEDIUM, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] HARD, 4" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <testcase name="[1] EASY, 15" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
-  <testcase name="[2] MEDIUM, 12" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
-  <testcase name="[3] HARD, 7" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[2] MEDIUM, 12" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
+  <testcase name="[3] HARD, 7" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
   <testcase name="[1] Easy, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
-  <testcase name="[2] Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
-  <testcase name="[3] Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[2] easY, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] EASY, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[4] Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
+  <testcase name="[5] medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.0"/>
+  <testcase name="[6] MEDIUM, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[7] Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[8] HaRd, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[9] HARD, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <testcase name="[1] EASY, 2" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <testcase name="[2] MEDIUM, 5" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <testcase name="[3] HARD, 5" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
-  <testcase name="[1] jhscbhjs, Easy, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.004"/>
-  <testcase name="[2] 123, Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
-  <testcase name="[3] hjscb, Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[1] jhscbhjs, Easy, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.005"/>
+  <testcase name="[2] ()2345ytr, EASY, EASY" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[3] 123, Medium, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.002"/>
+  <testcase name="[4] £$€, MEDIUM, MEDIUM" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[5] hjscb, Hard, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
+  <testcase name="[6] erduvi, HarD, HARD" classname="mastermindgame_java.Settings.TestDifficulty" time="0.001"/>
   <system-out><![CDATA[Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
+Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
+Invalid difficulty. Please try again or type EXIT to quit the game:
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
 Invalid difficulty. Please try again or type EXIT to quit the game:
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
