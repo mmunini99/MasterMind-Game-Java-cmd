@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T12:45:44" hostname="Lisas-MacBook-Pro.local" time="0.085">
+<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T14:01:53" hostname="DESKTOP-R0UEMP9" time="0.18">
   <properties/>
-  <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.05"/>
-  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.014"/>
-  <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.014"/>
-  <system-out><![CDATA[Current working directory: /Users/lisadavinchie/Documents/University/SoftwareDevelopmentMethods/MasterMind-Game-Java-cmd/app
+  <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.117"/>
+  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.023"/>
+  <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.025"/>
+  <system-out><![CDATA[Current working directory: C:\Users\Gaia\Desktop\MasterMind-Game-Java-cmd\app
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
 
 You will play with the EASY level. Have a nice game!

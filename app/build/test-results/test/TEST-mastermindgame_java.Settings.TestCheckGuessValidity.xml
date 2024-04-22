@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.Settings.TestCheckGuessValidity" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-04-22T12:45:44" hostname="Lisas-MacBook-Pro.local" time="0.024">
+<testsuite name="mastermindgame_java.Settings.TestCheckGuessValidity" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-04-22T14:01:54" hostname="DESKTOP-R0UEMP9" time="0.073">
   <properties/>
-  <testcase name="[1] EASY, 4222&#10;0122, [0, 1, 2, 2]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.008"/>
-  <testcase name="[2] MEDIUM, 3455, [3, 4, 5, 5]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
-  <testcase name="[3] HARD, 5123, [5, 1, 2, 3]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
-  <testcase name="[1] EASY, 0121, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.003"/>
-  <testcase name="[2] MEDIUM, 0135, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
-  <testcase name="[3] MEDIUM, 0t39, false" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
-  <testcase name="[4] HARD, 5412, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.001"/>
+  <testcase name="[1] EASY, 4222&#10;0122, [0, 1, 2, 2]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.021"/>
+  <testcase name="[2] MEDIUM, 3455, [3, 4, 5, 5]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.002"/>
+  <testcase name="[3] HARD, 5123, [5, 1, 2, 3]" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.003"/>
+  <testcase name="[1] EASY, 0121, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.012"/>
+  <testcase name="[2] MEDIUM, 0135, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.003"/>
+  <testcase name="[3] MEDIUM, 0t39, false" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.002"/>
+  <testcase name="[4] HARD, 5412, true" classname="mastermindgame_java.Settings.TestCheckGuessValidity" time="0.002"/>
   <system-out><![CDATA[Invalid input. Please enter a 4-digit number using digits from 0 to 2.
 
 ]]></system-out>

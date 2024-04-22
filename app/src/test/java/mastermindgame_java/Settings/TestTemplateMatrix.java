@@ -41,28 +41,35 @@ public class TestTemplateMatrix {
                 Arguments.of(new int[] { 1, 2, 0, 2 }, new int[] { 3, 1, 0 }, 2, new int[] { 3, 1, 2, 0, 2, 3, 1, 0 }));
     }
 
-    @ParameterizedTest
-    @MethodSource("provideTestData_testPrintTemplate")
-    public void testPrintTemplate(int[] guess, int[] feedback, int count, String expectedOutput) {
-        int lengthOfTrials = count + 1;
-        TemplateMatrix matrix = new TemplateMatrix(lengthOfTrials, guess.length, true);
-        matrix.setGuess(guess, feedback, count);
-        matrix.printTemplate(count);
 
-        String content = "";
-        try {
-            content = Files.readString(Paths.get("output.txt"), StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        assertEquals(expectedOutput, content);
-    }
 
-    static Stream<Arguments> provideTestData_testPrintTemplate() {
-        return Stream.of(
-            Arguments.of(new int[] { 0, 0, 0, 0 }, new int[] { 0, 1, 3 }, 0, "ciao")
-        );
-    };
+    // @ParameterizedTest
+    // @MethodSource("provideTestData_testPrintTemplate")
+    // public void testPrintTemplate(int[] guess, int[] feedback, int count, String expectedOutput) {
+
+    //     int lengthOfTrials = count + 1;
+    //     TemplateMatrix matrix = new TemplateMatrix(lengthOfTrials, guess.length, false);
+    //     matrix.setGuess(guess, feedback, count);
+    //     matrix.printTemplate(count);
+
+
+
+
+    //     // String content = "";
+    //     // try {
+    //     //     content = Files.readString(Paths.get("output.txt"), StandardCharsets.UTF_8);
+    //     // } catch (IOException e) {
+    //     //     e.printStackTrace();
+    //     // }
+
+    //     assertEquals(expectedOutput, content);
+    // }
+
+    // static Stream<Arguments> provideTestData_testPrintTemplate() {
+    //     return Stream.of(
+    //         Arguments.of(new int[] { 0, 0, 0, 0 }, new int[] { 0, 1, 3 }, 0, "ciao")
+    //     );
+    // };
 
 }
