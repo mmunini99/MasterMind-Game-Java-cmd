@@ -41,13 +41,14 @@ public class CalculatePoints {
     }
     
     public int calculateFinalScore(int trialsLeft) {
-        int score = basePoints;
+        int score = 0;
 
         if (trialsLeft != 0) {
             score += pointsPerTrialLeft * trialsLeft;
             score *= multiplicationConstant;
-            score += basePoints;
         }
+        score += basePoints;
+        
         return score;
     }
 }
