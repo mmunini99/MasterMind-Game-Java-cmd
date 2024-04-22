@@ -60,7 +60,7 @@ public class Play {
 
         int count = 0;
 
-        int final_score = 0;
+        int finalScore = 0;
         ProvideFeedback provideFeedback = new ProvideFeedback(secretCode);
 
         while (count < trials) {
@@ -92,9 +92,9 @@ public class Play {
         }
         System.out.println("Remaining trials: " + (trials - count) + "\n");
 
-        final_score = score.calculateFinalScore(trials - count - 1);
+        finalScore = score.calculateFinalScore(trials - count - 1);
 
-        System.out.println(provideFinalScore(final_score));
+        System.out.println(provideFinalScore(finalScore));
 
         return playerWon;
     }
