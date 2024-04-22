@@ -4,33 +4,49 @@ import java.util.Map;
 import static mastermindgame_java.Settings.SetDifficulty.Level;
 
 public class CalculatePoints {
-    int base_points = 10;
+    private final int basePoints = 10;
+    private Level difficultyLvl;
 
-    private final int[] pointsPerTrialLeft = {5, 10, 30};
-    private final int[] multiplicationConstant = {1, 2, 4};
+    private int pointsPerTrialLeft;
+    private int multiplicationConstant;
 
-    private final Map<Level, Integer> difficultyMap = new HashMap<>();
+    private static final Map<Level, pointsParameters> pointsMap = new HashMap<>();
 
-    public CalculatePoints() {
-        difficultyMap.put(Level.EASY, 0);
-        difficultyMap.put(Level.MEDIUM, 1);
-        difficultyMap.put(Level.HARD, 2);
+
+    public CalculatePoints(Level difficultyLvl) {
+        this.difficultyLvl = difficultyLvl;
+        setParameters();
+    }
+
+    static{
+        pointsMap.put(Level.EASY, new pointsParameters(5, 1));
+        pointsMap.put(Level.MEDIUM, new pointsParameters(10, 2));
+        pointsMap.put(Level.HARD, new pointsParameters(30, 4));
+    }
+
+    private void setParameters(){
+        pointsParameters parameters = pointsMap.get(difficultyLvl);
+        this.pointsPerTrialLeft = parameters.pointsPerTrialLeft;
+        this.multiplicationConstant = parameters.multiplicationConstant;
+    }
+
+    private static class pointsParameters{
+        private int pointsPerTrialLeft;
+        private int multiplicationConstant;
+
+        public pointsParameters(int pointsPerTrialLeft, int multiplicationConstant){
+            this.pointsPerTrialLeft = pointsPerTrialLeft;
+            this.multiplicationConstant = multiplicationConstant;
+        }
     }
     
-    public int calculateFinalScore(Level difficulty_level, int trialsLeft) {
-        int score = 0;
-        int difficulty = difficultyMap.getOrDefault(difficulty_level, -1);
-        
-        if (difficulty == -1) {
-            System.exit(0);
-        }
+    public int calculateFinalScore(int trialsLeft) {
+        int score = basePoints;
 
         if (trialsLeft != 0) {
-            score += pointsPerTrialLeft[difficulty] * trialsLeft;
-            score *= multiplicationConstant[difficulty];
-            score += base_points;
-        } else {
-            score += base_points;
+            score += pointsPerTrialLeft * trialsLeft;
+            score *= multiplicationConstant;
+            score += basePoints;
         }
         return score;
     }

@@ -26,8 +26,8 @@ public class TestCalculatePoints {
         "HARD, 6, 730",    
     })
     void testCalculateFinalScore(SetDifficulty.Level difficultyLevel, int trialsLeft, int expectedScore) {
-        CalculatePoints calculator = new CalculatePoints();
-        int actualScore = calculator.calculateFinalScore(difficultyLevel, trialsLeft);
+        CalculatePoints calculator = new CalculatePoints(difficultyLevel);
+        int actualScore = calculator.calculateFinalScore(trialsLeft);
         assertEquals(expectedScore, actualScore);
     }
 }
