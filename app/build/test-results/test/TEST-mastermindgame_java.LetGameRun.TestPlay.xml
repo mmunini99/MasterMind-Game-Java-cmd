@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T16:03:33" hostname="DESKTOP-R0UEMP9" time="0.067">
+<testsuite name="mastermindgame_java.LetGameRun.TestPlay" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-22T16:28:48" hostname="DESKTOP-R0UEMP9" time="0.064">
   <properties/>
   <testcase name="[1] [0, 1, 0, 0], true, EasY&#10;0100&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.046"/>
-  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.009"/>
+  <testcase name="[2] [2, 0, 4, 4], true, Medium&#10;sjhbdjhsb&#10;5204&#10;2044&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.007"/>
   <testcase name="[3] [1, 0, 1, 0], false, Hard&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;3305&#10;" classname="mastermindgame_java.LetGameRun.TestPlay" time="0.006"/>
   <system-out><![CDATA[Current working directory: C:\Users\Gaia\Desktop\MasterMind-Game-Java-cmd\app
 Choose difficulty between EASY, MEDIUM and HARD or type EXIT to quit the game:
