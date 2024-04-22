@@ -8,7 +8,7 @@ This repository contains the command line version of Mastermind. The game has be
 
 To play Mastermind on your device a Java distribution is required. To run the file from terminal you first need to compile it. Follow these instructions on a command prompt:
 
-* Locate yourself into `~\MasterMind-Game-Java-cmd\app\src\main\java\`
+* Locate yourself into `~MasterMind-Game-Java-cmd\app\src\main\java`
 
 * Compile the classes using:
 
@@ -17,7 +17,7 @@ If you have a Windows OS, work with:
 javac mastermindgame_java\LetGameRun\Play.java mastermindgame_java\Settings\*.java
 ```
 
-Insetad if you have Linux or MacOS: 
+Instead if you have Linux or MacOS: 
 ```bash
 javac mastermindgame_java/LetGameRun/Play.java mastermindgame_java/Settings/*.java
 ```
