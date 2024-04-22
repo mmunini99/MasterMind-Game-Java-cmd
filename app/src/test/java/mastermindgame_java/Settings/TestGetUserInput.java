@@ -31,7 +31,10 @@ public class TestGetUserInput {
         return Stream.of(
             Arguments.of("Easy", "Easy"),
             Arguments.of("Medium", "Medium"),
-            Arguments.of("shaha", "shaha")
+            Arguments.of("shaha", "shaha"),
+            Arguments.of("Hard", "Hard"),
+            Arguments.of("shsbxhd", "shsbxhd"),
+            Arguments.of("237da", "237da")
         );
     }
 
