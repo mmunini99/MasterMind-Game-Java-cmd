@@ -6,9 +6,6 @@ import mastermindgame_java.Settings.PrintString;
 
 public class GameMessages {
 
-    // TODO: public or static for the methods?
-    // TODO: add something for the EXIT keyword?
-
     boolean printToFile;
 
     PrintString printString;

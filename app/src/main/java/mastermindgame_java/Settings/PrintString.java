@@ -14,12 +14,7 @@ public class PrintString {
     public PrintString(boolean printToFile) {
         this.printToFile = printToFile;
 
-        
     }
-
-
-
-
 
     public void redirectOutput(String input) {
         try {
@@ -33,13 +28,9 @@ public class PrintString {
         }
     }
 
-
-
     private void printToCommandLine(String input) {
         System.out.println(input);
     }
-
-
 
     private void printToTxt(String input) throws FileNotFoundException, IOException {
         FileOutputStream fileOutputStream = new FileOutputStream(filePath, true);
@@ -52,16 +43,14 @@ public class PrintString {
 
     public void cleanFile() {
         try {
-            // Create a FileOutputStream without append mode (truncate)
             FileOutputStream fileOutputStream = new FileOutputStream(filePath, false);
-            
-            // Close the FileOutputStream to truncate the file
+
             fileOutputStream.close();
-            
+
             System.out.println("File cleaned successfully.");
         } catch (IOException e) {
             System.err.println("Error cleaning the file: " + e.getMessage());
         }
     }
-    
+
 }

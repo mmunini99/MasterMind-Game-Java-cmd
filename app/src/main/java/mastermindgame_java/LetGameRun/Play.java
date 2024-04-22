@@ -21,11 +21,6 @@ public class Play {
     private int lengthOfSequence;
     private int trials;
     private int maxValue;
-    //Variable used only in graphic version
-    public int[] secretCode;
-    public int[] feedback = new int[3]; //---> create a constant
-    private int count;
-    private boolean initialized = false;
 
     private CheckGuessValidity scannerGuess;
     private TemplateMatrix resultSummary;
@@ -34,13 +29,19 @@ public class Play {
     private boolean printToFile;
     public boolean playerWon;
 
+    // Variable used only in graphic version
+    public int[] secretCode;
+    public int[] feedback = new int[3]; // ---> create a constant
+    private int count;
+    private boolean initialized = false;
+
     public Play(Scanner scanner, boolean printToFile) {
         this.scanner = scanner;
         this.printToFile = printToFile;
         scannerDifficulty = new ScannerDifficulty(scanner);
     }
-    
-    public void askForDifficulty(){
+
+    public void askForDifficulty() {
         scannerDifficulty.getDifficulty(scanner);
         this.difficultyLvl = scannerDifficulty.getDifficultyLevel();
         this.setDifficulty = new SetDifficulty(difficultyLvl);
@@ -55,35 +56,30 @@ public class Play {
         initialized = true;
 
     }
+
     public boolean LetGameRun(int[] secretCode) {
-        // Initialize the feedback array
-        this.feedback = new int[3]; //---> create a constant
-
-
-        // Display the second welcome message
         System.out.println(firstWelcomeMessage(difficultyLvl.toString()));
 
-        // Display the number of trials that the player has to guess the secret code
         System.out.println(declareNumberOfTrials(trials));
-        // Initialize the counter for the trials
+
         int count = 0;
-        // Initialize the final score
+
         int final_score = 0;
         ProvideFeedback provideFeedback = new ProvideFeedback(secretCode);
-        // Loop over the trials
+
         while (count < trials) {
             if (count > 0) {
                 resultSummary.printTemplate(count);
             }
             System.out.println(enterYourGuess(lengthOfSequence));
-            // Get the player's guess
+
             int[] guess = scannerGuess.validateGuess();
-            // Check if the player's guess is correct
+
             this.feedback = provideFeedback.getFeedback(guess);
             resultSummary.setGuess(guess, feedback, count);
-            // Display the feedback
+
             provideFeedback.displayFeedback();
-            // Check if the player has guessed the secret code
+
             if (wasSecretCodeGuessed(feedback)) {
                 this.playerWon = true;
                 break;
@@ -99,53 +95,58 @@ public class Play {
 
         }
         System.out.println("Remaining trials: " + (trials - count) + "\n");
-        // Calculate the final score
+
         final_score = score.calculateFinalScore(trials - count - 1);
-        // Display the final score
+
         System.out.println(provideFinalScore(final_score));
 
         return playerWon;
     }
 
-    // Generates a random 4-digit secret code
     public int[] generateSecretCode() {
 
-        // Initialise a new array of integers
         int[] code = new int[lengthOfSequence];
         Random random = new Random();
-        // Fill the array with random numbers from 0 to 5
+
         for (int i = 0; i < lengthOfSequence; i++) {
             code[i] = random.nextInt((maxValue + 1));
         }
         return code;
     }
 
-    public void computeFeedback(int[] guess){
+    public void computeFeedback(int[] guess) {
         ProvideFeedback provider = new ProvideFeedback(secretCode);
         this.feedback = provider.getFeedback(guess);
     }
-    public boolean getInitialized(){
+
+    public boolean getInitialized() {
         return initialized;
     }
+
     public int getCount() {
         return count;
     }
-    public void AugCount(){
+
+    public void AugCount() {
         count++;
     }
+
     public void setSecretCode(int[] secretCode) {
         this.secretCode = secretCode;
     }
-    // Check if the player has trials left
+
     public boolean areTrialsLeft(int count) {
         return count < trials && count != trials - 1;
     }
+
     public int[] getSecretCode() {
         return secretCode;
     }
+
     public boolean wasSecretCodeGuessed(int[] feedback) {
         return feedback[0] == lengthOfSequence;
     }
+
     public static void main(String[] args) {
         final boolean printToFile = false;
 
@@ -155,7 +156,7 @@ public class Play {
         play.askForDifficulty();
 
         int[] secretCode = play.generateSecretCode();
-        
+
         boolean playerWon = play.LetGameRun(secretCode);
 
         if (playerWon) {
