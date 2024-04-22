@@ -64,14 +64,14 @@ public class Play {
         // Loop over the trials
         while (count < trials) {
             if (count > 0) {
-                resultSummary.printtemplate(count);
+                resultSummary.printTemplate(count);
             }
             System.out.println(enterYourGuess(lengthOfSequence));
             // Get the player's guess
             int[] guess = scannerGuess.validateGuess();
             // Check if the player's guess is correct
             this.feedback = provideFeedback.getFeedback(guess);
-            resultSummary.setguess(guess, feedback, count);
+            resultSummary.setGuess(guess, feedback, count);
             // Display the feedback
             provideFeedback.displayFeedback();
             // Check if the player has guessed the secret code
