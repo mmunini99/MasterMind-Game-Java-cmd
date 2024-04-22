@@ -65,17 +65,5 @@ public class SetDifficulty {
         return maxValueForColor;
     }
 
-    public String Difficulty2String() {
-        switch (level) {
-            case EASY:
-                return "Easy";
-            case MEDIUM:
-                return "Medium";
-            case HARD:
-                return "Hard";
-            default:
-                return invalidLevel();
-        }
-    }
 
 }
