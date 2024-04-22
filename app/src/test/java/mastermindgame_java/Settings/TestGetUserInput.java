@@ -13,8 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestGetUserInput {
 
-
-
     @ParameterizedTest
     @MethodSource("provideTestData_testGetUserInput")
     public void testGetUserInput(String input, String expectedOutput) {
@@ -29,13 +27,12 @@ public class TestGetUserInput {
 
     static Stream<Arguments> provideTestData_testGetUserInput() {
         return Stream.of(
-            Arguments.of("Easy", "Easy"),
-            Arguments.of("Medium", "Medium"),
-            Arguments.of("shaha", "shaha"),
-            Arguments.of("Hard", "Hard"),
-            Arguments.of("shsbxhd", "shsbxhd"),
-            Arguments.of("237da", "237da")
-        );
+                Arguments.of("Easy", "Easy"),
+                Arguments.of("Medium", "Medium"),
+                Arguments.of("shaha", "shaha"),
+                Arguments.of("Hard", "Hard"),
+                Arguments.of("shsbxhd", "shsbxhd"),
+                Arguments.of("237da", "237da"));
     }
 
 }

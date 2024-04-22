@@ -13,8 +13,6 @@ public class TestProvideFeedback {
     @ParameterizedTest
     @MethodSource("provideTestData_testGetFeedback")
     public void testGetFeedback(int[] secretCode, int[] guess, int[] expectedOutput) {
-        // expectedOutput: [nRightNumbersRightPosition, nRightNumbersWrongPosition,
-        // nWrongNumbersWrongPosition]
 
         ProvideFeedback feedbackObj = new ProvideFeedback(secretCode);
         int[] feedback = feedbackObj.getFeedback(guess);
