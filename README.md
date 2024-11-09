@@ -1,5 +1,5 @@
 # MastermindGame_Java: command line version of Mastermind
-### Group: [Cabriel Lorenzo](https://github.com/lcabriel) | [Da Vinchie Lisa](https://github.com/LisaDaVinchie) | [Marsich Gaia](https://github.com/gmarsich) | [Munini Matteo](https://github.com/mmunini99)
+### Team: [Cabriel Lorenzo](https://github.com/lcabriel) | [Da Vinchie Lisa](https://github.com/LisaDaVinchie) | [Marsich Gaia](https://github.com/gmarsich) | [Munini Matteo](https://github.com/mmunini99)
 
 This repository contains the command line version of Mastermind. The game has been implemented in Java and the testing part has been developed using Gradle. The free version of CircleCI as Continuous Integration tool was used.
 
